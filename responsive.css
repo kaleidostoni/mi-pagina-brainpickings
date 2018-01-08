@@ -1,0 +1,198 @@
+
+@media only screen and (max-width:1000px){
+
+  .grid-container {
+    width: 80%;
+    margin:0 auto;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 200px 380px 650px 70px;
+    grid-gap:22px;
+    grid-template-areas:
+    "A A A"
+    "B B B"
+    "C C D"
+    "E F G"
+    "H H H";
+  }
+
+  .menu {
+    margin: 0 35px 0 0;
+  }
+
+  .description {
+    height: 380px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .contact {
+    height:380px;
+  }
+
+
+  .card1 {
+    height: 650px;
+  }
+
+  .card1 > img {
+    height: 120px;
+  }
+
+  .card1 > a {
+    margin-top: 50px;
+  }
+
+  .card2 {
+    height: 650px;
+  }
+
+  .card1 > img {
+    height: 120px;
+  }
+
+  .card2 > a {
+    margin-top: 50px;
+  }
+
+  .card3 {
+    height: 650px;
+  }
+
+  .card1 > img {
+    height: 120px;
+  }
+
+  .card3 > a {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .grid-container {
+    width: 100%;
+    margin:0 auto;
+    padding:0;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 300px 300px 200px 450px 450px 450px 70px;
+    grid-gap: 25px;
+    grid-template-areas:
+    "A"
+    "B"
+    "C"
+    "D"
+    "E"
+    "F"
+    "G"
+    "H";
+  }
+
+.nav-mobile {
+  grid-area: A;
+  background-color: #FFDB00;
+  height:80px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.menu-icon {
+  display: block;
+  z-index: 20;
+  height: 50px;
+  float: right;
+  margin: 5px 25px 0 0;
+}
+
+.menu {
+  display: none;
+}
+
+.header {
+  grid-area: B;
+  height: 310px;
+}
+
+.header > img {
+  height: 260px;
+  margin: 15px auto;
+  display: block;
+}
+
+.description {
+  grid-area: C;
+  height: 300px;
+}
+
+.contact {
+  height: 200px;
+}
+.card1, .card2, .card3 {
+  height: 450px;
+}
+}
+
+@media only screen and (max-width:400px){
+  .grid-container {
+    width: 100%;
+    margin:0 auto;
+    padding:0;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 300px 390px 250px 480px 480px 480px 70px;
+    grid-gap: 15px;
+    grid-template-areas:
+    "A"
+    "B"
+    "C"
+    "D"
+    "E"
+    "F"
+    "G"
+    "H";
+  }
+
+.nav-mobile {
+  grid-area: A;
+  background-color: #FFDB00;
+  height:70px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.menu-icon {
+  display: block;
+  z-index: 20;
+  height: 50px;
+  float: right;
+  margin: 5px 25px 0 0;
+}
+
+.menu {
+  display: none;
+}
+
+.header {
+  grid-area: B;
+  height: 300px;
+}
+
+.header > img {
+  height: 260px;
+  margin: 15px auto;
+  display: block;
+}
+
+.description {
+  grid-area: C;
+  height: 390px;
+}
+
+.contact {
+  height: 250px;
+}
+.card1, .card2, .card3 {
+  height: 480px;
+}
+}

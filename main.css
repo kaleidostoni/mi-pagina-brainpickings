@@ -1,0 +1,257 @@
+.background {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(assets/images/dots.png);
+  background-repeat: repeat;
+}
+
+.grid-container {
+  width: 80%;
+  margin:0 auto;
+  padding:0;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60px 200px 300px 550px 70px;
+  grid-gap:15px;
+  grid-template-areas:
+  "A A A"
+  "B B B"
+  "C C D"
+  "E F G"
+  "H H H";
+}
+
+
+
+.nav {
+  grid-area: A;
+  background-color: #FFDB00;
+  height:60px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.logo {
+  height: 40px;
+  margin: 10px 0 0 50px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  display: inline-block;
+  list-style: none;
+  margin: 0 35px 0 200px;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+  float: right;
+}
+
+li {
+  float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+    color: white;
+}
+
+.header {
+  grid-area: B;
+  background-color:#FFDB00;
+  height: 200px;
+}
+
+.header > img {
+  height: 170px;
+  margin: 15px auto;
+  display: block;
+}
+
+.description {
+  grid-area: C;
+  background-color: white;
+  height: 300px;
+  padding-left: 25px;
+}
+
+.description > h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding:25px 0 0 0;
+  margin:0;
+}
+
+hr {
+  height: 1px;
+  width: 92%;
+  background-color: gray;
+  margin:0;
+}
+
+.description > p {
+  width: 94%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+}
+
+.button {
+  display:inline-block;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #FFDB00;
+  margin-top: 10px;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+.contact {
+  grid-area: D;
+  background-color:white;
+  height: 300px;
+  padding-left: 25px;
+}
+
+.contact > h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding:25px 0 0 0;
+  margin:0;
+}
+
+.contact > h4 {
+  margin-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.contact > p {
+  width: 70%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+}
+
+.card1 {
+  grid-area: E;
+  background-color: white;
+  height: 550px;
+}
+
+.card1 > img {
+  height: 170px;
+  display: block;
+  margin:20px auto;
+}
+
+.card1 > h3 {
+  margin-top: 30px;
+  margin-left: 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.card1 > p {
+  width: 80%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.card1 > a {
+  margin-left: 25px;
+}
+
+.card2 {
+  grid-area: F;
+  background-color: white;
+  height: 550px;
+}
+
+.card2 > img {
+  height: 170px;
+  display: block;
+  margin:20px auto;
+}
+
+.card2 > h3 {
+  margin-top: 30px;
+  margin-left: 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.card2 > p {
+  width: 80%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.card2 > a {
+  margin-left: 25px;
+}
+
+.card3 {
+  grid-area: G;
+  background-color: white;
+  height: 550px;
+}
+
+.card3 > img {
+  height: 170px;
+  display: block;
+  margin:20px auto;
+}
+
+.card3 > h3 {
+  margin-top: 30px;
+  margin-left: 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.card3 > p {
+  width: 80%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.card3 > a {
+  margin-left: 25px;
+}
+
+.footer {
+  grid-area: H;
+  background-color: #FFDB00;
+}
+
+.footer > p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+}
